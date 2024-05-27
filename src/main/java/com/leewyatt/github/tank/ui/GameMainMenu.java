@@ -22,10 +22,7 @@ import javafx.util.Duration;
 import static com.almasb.fxgl.dsl.FXGL.*;
 import static javafx.scene.input.KeyCode.*;
 
-/**
- * @author LeeWyatt
- * 游戏的主菜单场景
- */
+
 public class GameMainMenu extends FXGLMenu {
 
     private final TranslateTransition tt;
@@ -33,7 +30,7 @@ public class GameMainMenu extends FXGLMenu {
 
     public GameMainMenu() {
         super(MenuType.MAIN_MENU);
-        Texture texture = texture("ui/logo.png");
+        Texture texture = texture("ui/mbbc_start.png");
         texture.setLayoutX(144);
         texture.setLayoutY(160);
 
@@ -72,7 +69,7 @@ public class GameMainMenu extends FXGLMenu {
         Line line = new Line(30, 580, 770, 580);
         line.setStroke(Color.web("#B9340D"));
         line.setStrokeWidth(2);
-        Texture textureWall = texture("ui/fxgl.png");
+        Texture textureWall = texture("ui/mbbc_logo.png");
         textureWall.setLayoutX(310);
         textureWall.setLayoutY(600);
 
@@ -87,9 +84,6 @@ public class GameMainMenu extends FXGLMenu {
         tt.play();
     }
 
-    /**
-     * 显示玩家使用帮助.比如如何移动坦克,如何发射子弹
-     */
     private void instructions() {
         GridPane pane = new GridPane();
         pane.setHgap(20);
