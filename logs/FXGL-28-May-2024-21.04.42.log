@@ -1,0 +1,101 @@
+21:04:38.846 [main                     ] DEBUG Logger               - Configured Logger
+21:04:38.897 [main                     ] DEBUG GameApplication      - Logging settings
+Title: 90 Tank
+Version: Version 0.3
+Width: 816
+Height: 672
+Fullscreen: false
+Intro: false
+Profiling: false
+Single step:false
+App Mode: DEVELOPER
+Menu Key: ESCAPE
+Stage Style: DECORATED
+Scene Factory: class com.leewyatt.github.tank.TankApp$1
+
+21:04:39.581 [JavaFX Application Thread] DEBUG FXGLApplication      - Initializing FXGL
+21:04:39.587 [JavaFX Application Thread] INFO  Engine               - FXGL-17.1 (24.03.2022 17.34) on WINDOWS (J:22.0.1 FX:18)
+21:04:39.588 [JavaFX Application Thread] DEBUG Engine               - JRE Vendor Name: Oracle Corporation
+21:04:39.588 [JavaFX Application Thread] DEBUG Engine               - Running on OS: Windows 11 version 10.0
+21:04:39.588 [JavaFX Application Thread] DEBUG Engine               - Architecture: amd64
+21:04:39.588 [JavaFX Application Thread] INFO  Engine               - Source code and latest versions at: https://github.com/AlmasB/FXGL
+21:04:39.589 [JavaFX Application Thread] INFO  Engine               -       Ask questions and discuss at: https://github.com/AlmasB/FXGL/discussions
+21:04:39.589 [JavaFX Application Thread] INFO  Engine               -              Join the FXGL chat at: https://gitter.im/AlmasB/FXGL
+21:04:39.797 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Creating a JavaFX scene
+21:04:39.882 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Target settings size: 816.0 x 672.0
+21:04:39.882 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled scene size:    816.0 x 672.0
+21:04:39.883 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled ratio: (1.0, 1.0)
+21:04:39.884 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Set initial scene to GameStartupScene
+21:04:39.895 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Opening main window
+21:04:40.085 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Window border size: (14.4000244140625, 37.5999755859375)
+21:04:40.086 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled size: 816.0 x 672.0
+21:04:40.086 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled ratio: (1.0, 1.0)
+21:04:40.087 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scene size: 816.0 x 672.0
+21:04:40.088 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Stage size: 830.4000244140625 x 709.5999755859375
+21:04:40.101 [FXGL Background Thread 1 ] DEBUG Engine               - Initializing environment variables
+21:04:40.213 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - User app class for loading assets: class com.leewyatt.github.tank.TankApp
+21:04:40.214 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Applying CSS: fxgl_dark.css
+21:04:40.215 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:///C:/Users/Hanz%20Chester%20Bacus/.m2/repository/com/github/almasb/fxgl/17.1/fxgl-17.1.jar!/fxglassets/ui/css/fxgl_dark.css
+21:04:40.255 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Applying CSS: tankApp.css
+21:04:40.256 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hanz%20Chester%20Bacus/Desktop/New%20folder%20(2)/battle_tank/target/classes/assets/ui/css/tankApp.css
+21:04:40.260 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Initializing application scenes
+21:04:40.270 [FXGL Background Thread 1 ] DEBUG GameWorld            - Game world initialized
+21:04:40.379 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Physics world initialized: appHeight=672, physics.ppm=50.0
+21:04:40.380 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Using strategy: BRUTE_FORCE
+21:04:40.389 [FXGL Background Thread 1 ] DEBUG GameScene            - Game scene initialized: 816x672
+21:04:40.392 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hanz%20Chester%20Bacus/Desktop/New%20folder%20(2)/battle_tank/target/classes/assets/textures/ui/mbbc_start.png
+21:04:40.423 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hanz%20Chester%20Bacus/Desktop/New%20folder%20(2)/battle_tank/target/classes/assets/textures/ui/icon.png
+21:04:40.441 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hanz%20Chester%20Bacus/Desktop/New%20folder%20(2)/battle_tank/target/classes/assets/textures/ui/tankLoading.png
+21:04:40.469 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hanz%20Chester%20Bacus/Desktop/New%20folder%20(2)/battle_tank/target/classes/assets/textures/ui/mbbc_logo.png
+21:04:40.554 [FXGL Background Thread 1 ] DEBUG FXGL.DefaultMenu     - createMenuBodyGameMenu()
+21:04:40.569 [FXGL Background Thread 1 ] DEBUG FXGL.DefaultMenu     - createOptionsMenu()
+21:04:40.581 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:///C:/Users/Hanz%20Chester%20Bacus/.m2/repository/com/github/almasb/fxgl/17.1/fxgl-17.1.jar!/fxglassets/textures/particles/smoke.png
+21:04:40.704 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:///C:/Users/Hanz%20Chester%20Bacus/.m2/repository/com/github/almasb/fxgl/17.1/fxgl-17.1.jar!/fxglassets/textures/particles/trace_horizontal.png
+21:04:40.782 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Application scenes initialized
+21:04:40.799 [FXGL Background Thread 1 ] DEBUG SystemBundleService  - Loading FXGL system data
+21:04:40.810 [FXGL Background Thread 1 ] DEBUG FileSystemAccess     - Reading from: C:\Users\Hanz Chester Bacus\Desktop\New folder (2)\battle_tank\system\fxgl.bundle
+21:04:40.824 [FXGL Background Thread 1 ] DEBUG SystemBundleService  - Bundle FXGL: {}
+21:04:40.824 [FXGL Background Thread 1 ] DEBUG UpdaterService       - Checking for updates
+21:04:40.832 [FXGL Background Thread 4 ] DEBUG FXGLApplication      - Loading fonts
+21:04:40.832 [FXGL Background Thread 1 ] DEBUG FXGLApplication      - Loading default localization
+21:04:40.833 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:///C:/Users/Hanz%20Chester%20Bacus/.m2/repository/com/github/almasb/fxgl/17.1/fxgl-17.1.jar!/fxglassets/ui/fonts/VarelaRound-Regular.ttf
+21:04:40.837 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:///C:/Users/Hanz%20Chester%20Bacus/.m2/repository/com/github/almasb/fxgl/17.1/fxgl-17.1.jar!/fxglassets/languages/english.lang
+21:04:40.879 [FXGL Background Thread 1 ] INFO  FXGLApplication      - FXGL initialization took: 0.778 sec
+21:04:40.906 [JavaFX Application Thread] DEBUG Input                - Registered new binding: action0 - W
+21:04:40.907 [JavaFX Application Thread] DEBUG Input                - Registered new binding: action1 - Up
+21:04:40.908 [JavaFX Application Thread] DEBUG Input                - Registered new binding: action2 - S
+21:04:40.909 [JavaFX Application Thread] DEBUG Input                - Registered new binding: action3 - Down
+21:04:40.910 [JavaFX Application Thread] DEBUG Input                - Registered new binding: action4 - A
+21:04:40.912 [JavaFX Application Thread] DEBUG Input                - Registered new binding: action5 - Left
+21:04:40.913 [JavaFX Application Thread] DEBUG Input                - Registered new binding: action6 - D
+21:04:40.913 [JavaFX Application Thread] DEBUG Input                - Registered new binding: action7 - Right
+21:04:40.914 [JavaFX Application Thread] DEBUG Input                - Registered new binding: action8 - Space
+21:04:40.915 [JavaFX Application Thread] DEBUG Input                - Registered new binding: action9 - F
+21:04:40.918 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:///C:/Users/Hanz%20Chester%20Bacus/.m2/repository/com/github/almasb/fxgl/17.1/fxgl-17.1.jar!/fxglassets/ui/fonts/Abel-Regular.ttf
+21:04:40.932 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hanz%20Chester%20Bacus/Desktop/New%20folder%20(2)/battle_tank/target/classes/assets/textures/ui/cursor.png
+21:04:40.937 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - CTRL+8
+21:04:40.938 [JavaFX Application Thread] DEBUG Input                - Registered new binding: System info dump - CTRL+9
+21:04:40.939 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Restart - CTRL+R
+21:04:40.941 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Toggle Debug Camera - CTRL+7
+21:04:40.941 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:///C:/Users/Hanz%20Chester%20Bacus/.m2/repository/com/github/almasb/fxgl/17.1/fxgl-17.1.jar!/fxglassets/ui/fonts/TerminalLandMono-Regular.otf
+21:04:40.948 [JavaFX Application Thread] DEBUG LoopRunner           - Starting loop
+21:04:40.948 [JavaFX Application Thread] DEBUG LoopRunner           - Initializing JavaFX AnimationTimerLoop
+21:04:40.956 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:04:40.963 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:///C:/Users/Hanz%20Chester%20Bacus/.m2/repository/com/github/almasb/fxgl/17.1/fxgl-17.1.jar!/fxglassets/ui/fonts/Courier-Prime.ttf
+21:04:40.974 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from GameStartupScene and adding to FXGLMainMenuDummyScene
+21:04:40.975 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - GameStartupScene -> FXGLMainMenuDummyScene
+21:04:40.975 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Push state: GameMenu
+21:04:40.976 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hanz%20Chester%20Bacus/Desktop/New%20folder%20(2)/battle_tank/target/classes/assets/sounds/mainMenuLoad.wav
+21:04:41.154 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:04:41.164 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLMainMenuDummyScene and adding to GameMenu
+21:04:41.164 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLMainMenuDummyScene -> GameMenu
+21:04:41.327 [JavaFX Application Thread] DEBUG FXGLApplication      - Registering font factories with UI factory
+21:04:42.210 [FXGL Background Thread 2 ] INFO  UpdaterService       - Your current version:  17.1
+21:04:42.211 [FXGL Background Thread 2 ] INFO  UpdaterService       - Latest stable version: 21.1
+21:04:42.409 [JavaFX Application Thread] DEBUG FXGLApplication      - Exiting FXGL
+21:04:42.411 [JavaFX Application Thread] DEBUG LoopRunner           - Stopping loop
+21:04:42.411 [JavaFX Application Thread] DEBUG SystemBundleService  - Saving FXGL system data
+21:04:42.418 [JavaFX Application Thread] DEBUG FileSystemAccess     - Writing to: C:\Users\Hanz Chester Bacus\Desktop\New folder (2)\battle_tank\system\fxgl.bundle
+21:04:42.422 [JavaFX Application Thread] DEBUG Async                - Shutting down background threads
+21:04:42.422 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Closing main window
+21:04:42.432 [JavaFX Application Thread] DEBUG Logger               - Closing Logger

@@ -1,1 +1,1 @@
-This directory contains FXGL system data files.
+The directory contains FXGL system data files.
