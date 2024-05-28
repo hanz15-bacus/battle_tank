@@ -11,11 +11,7 @@ import com.leewyatt.github.tank.ItemType;
 import static com.almasb.fxgl.dsl.FXGL.*;
 import static com.almasb.fxgl.dsl.FXGL.getAppHeight;
 
-/**
- * @author LeeWyatt
- * 子弹和敌人的碰撞(需要忽略敌人阵营的子弹;这个忽略的设置写到了产生子弹的实体方法里了)
- *      销毁敌人 也 销毁子弹
- */
+
 public class BulletEnemyHandler extends CollisionHandler {
 
     public BulletEnemyHandler() {
@@ -28,7 +24,6 @@ public class BulletEnemyHandler extends CollisionHandler {
         bullet.removeFromWorld();
         enemy.removeFromWorld();
         inc("destroyedEnemy", 1);
-        // get item 一定几率得到道具
         if (FXGLMath.randomBoolean(GameConfig.SPAWN_ITEM_PRO)) {
             spawn("item",
                     new SpawnData(FXGLMath.random(50, getAppWidth() - 50 - 6 * 24)

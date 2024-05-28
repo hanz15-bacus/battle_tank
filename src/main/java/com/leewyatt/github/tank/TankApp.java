@@ -85,7 +85,7 @@ public class TankApp extends GameApplication {
             @Override
             public FXGLMenu newMainMenu() {
 
-                return new GameMainMenu();
+                return new GameMenu();
             }
 
             @Override
@@ -172,28 +172,60 @@ public class TankApp extends GameApplication {
             if (nv.intValue() == GameConfig.ENEMY_AMOUNT) {
                 set("gameOver", true);
                 play("Win.wav");
-                runOnce(
-                        () -> getSceneService().pushSubScene(successSceneLazyValue.get()),
-                        Duration.seconds(1.5));
+                showWinnerSplashScreen();
             }
         });
     }
 
-    public void buildAndStartLevel() {
+    private void showWinnerSplashScreen() {
+        Pane splashPane = new Pane();
+        splashPane.setPrefSize(getAppWidth(), getAppHeight());
+        splashPane.setStyle("-fx-background-color: transparent;");
 
+        Rectangle blackScreen = new Rectangle(getAppWidth(), getAppHeight(), Color.BLACK);
+        blackScreen.setOpacity(0);
+
+        Text winnerText = new Text("WINNER!!!");
+        winnerText.setFill(Color.YELLOW);
+        winnerText.setFont(new Font(50));
+        winnerText.setOpacity(0);
+        winnerText.setLayoutX(getAppWidth() / 2.0 - 100);
+        winnerText.setLayoutY(getAppHeight() / 2.0 - 25);
+
+        splashPane.getChildren().addAll(blackScreen, winnerText);
+        getGameScene().addUINode(splashPane);
+
+        Timeline timeline = new Timeline(
+                new KeyFrame(Duration.seconds(0), new KeyValue(blackScreen.opacityProperty(), 0)),
+                new KeyFrame(Duration.seconds(1), new KeyValue(blackScreen.opacityProperty(), 1)),
+                new KeyFrame(Duration.seconds(2), new KeyValue(winnerText.opacityProperty(), 1)),
+                new KeyFrame(Duration.seconds(6), new KeyValue(winnerText.opacityProperty(), 1)),
+                new KeyFrame(Duration.seconds(7), new KeyValue(winnerText.opacityProperty(), 0))
+        );
+
+        timeline.setOnFinished(e -> {
+            getGameScene().removeUINode(splashPane);
+            // Switch back to the main menu after the splash screen
+            getGameController().gotoMainMenu();
+        });
+        timeline.play();
+    }
+
+    public void buildAndStartLevel() {
         getGameWorld().getEntitiesByType(
                 GameType.BULLET, GameType.ENEMY, GameType.PLAYER
         ).forEach(Entity::removeFromWorld);
 
-
         Rectangle rect1 = new Rectangle(getAppWidth(), getAppHeight() / 2.0, Color.web("#333333"));
         Rectangle rect2 = new Rectangle(getAppWidth(), getAppHeight() / 2.0, Color.web("#333333"));
         rect2.setLayoutY(getAppHeight() / 2.0);
-        Text text = new Text("STAGE " + geti("level"));
+
+        Text text = new Text("Ready?");
         text.setFill(Color.WHITE);
         text.setFont(new Font(35));
-        text.setLayoutX(getAppWidth() / 2.0 - 80);
+        text.setLayoutX(getAppWidth() / 2.0 - 70);
         text.setLayoutY(getAppHeight() / 2.0 - 5);
+
         Pane p1 = new Pane(rect1, rect2, text);
 
         addUINode(p1);

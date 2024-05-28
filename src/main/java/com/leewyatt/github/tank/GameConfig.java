@@ -4,9 +4,7 @@ import com.almasb.fxgl.core.collection.PropertyMap;
 import com.almasb.fxgl.dsl.FXGL;
 import javafx.util.Duration;
 
-/**
- * @author LeeWyatt
- */
+
 public class GameConfig {
 
     private GameConfig() {
@@ -14,36 +12,24 @@ public class GameConfig {
 
     private static final PropertyMap map;
 
-    //配置文件里有详细的注释说明
+
     static {
         map = FXGL.getAssetLoader().loadPropertyMap("properties/game.properties");
     }
 
     public static final int MAX_LEVEL = map.getInt("maxLevel");
 
-    /**
-     * 顶级的子弹可以摧毁树木, 可以打石头墙
-     */
+
     public static final int PLAYER_BULLET_MAX_LEVEL = map.getInt("bulletMaxLevel");
-    /**
-     * 敌军坦克数量
-     */
+
     public static final int ENEMY_AMOUNT = map.getInt("enemyAmount");
-    /**
-     * 玩家生命值
-     */
+
     public static final int PLAYER_HEALTH = map.getInt("playerHealth");
-    /**
-     * 玩家子弹速度 (基础速度+子弹等级*60)
-     */
+
     public static final int PLAYER_BULLET_SPEED = map.getInt("playerBulletSpeed");
-    /**
-     * 敌人子弹速度
-     */
+
     public static final int ENEMY_BULLET_SPEED = map.getInt("enemyBulletSpeed");
-    /**
-     * 玩家射击间隔
-     */
+
     public static final Duration PLAYER_SHOOT_DELAY = Duration.seconds(map.getDouble("playerShootDelay"));
     /**
      * 敌人射击间隔
